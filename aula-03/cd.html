@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de CDs</title>
+  </head>
+  <body>
+    <form action="insereCd.php" method="POST">
+      <div>
+        <label for="artista">Artista: </label>
+        <input type="text" name="artista" id="artista" />
+      </div>
+
+      <div>
+        <label for="titulo">Título: </label>
+        <input type="text" name="titulo" id="titulo" />
+      </div>
+
+      <div>
+        <label for="descricao">Descrição: </label>
+        <textarea name="descricao" id="descricao"></textarea>
+      </div>
+
+      <div>
+        <label for="preco">Preço: </label>
+        <input type="number" name="preco" id="preco" />
+      </div>
+
+      <div>
+        <label for="ano">Ano: </label>
+        <input type="number" name="ano" id="ano" />
+      </div>
+
+      <div>
+        <label for="estilo">Estilo: </label>
+        <select name="estilo" id="estilo">
+          <option value="mpb">MPB</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="sertanejo">Sertanejo</option>
+          <option value="eletronica">Eletrônica</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gravadora">Gravadora: </label>
+        <select name="gravadora" id="gravadora">
+          <option value="sony">Sony</option>
+          <option value="universal-music">Universal Music</option>
+          <option value="warner-music">Warner Music</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="musicas">Músicas (separadas por ,): </label>
+        <textarea name="musicas" id="musicas"></textarea>
+      </div>
+
+      <div><button type="submit">Inserir CD</button></div>
+    </form>
+  </body>
+</html>
