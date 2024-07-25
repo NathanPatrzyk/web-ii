@@ -1,6 +1,6 @@
 <?php
-    //setcookie("usuario", "Joaquim da silva");
-    //setcookie("usuario2", "Marcos de Melo", time()+86400);
+    // setcookie("usuario", "Joaquim da silva");
+    // setcookie("usuario2", "Marcos de Melo", time()+86400);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +24,7 @@
             echo "Usuário novo, seja bem-vindo!<br>";
 
 
-        setcookie("usuario2");
+        // setcookie("usuario2");
         
     ?>
 </body>

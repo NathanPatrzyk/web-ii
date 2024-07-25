@@ -9,9 +9,9 @@
 
     $servername = "127.0.0.1";
     $username = "root";
-    $password = "password";
+    $password = "";
     $dbname = "db_cadastro";
-    $port = 3307;
+    $port = 3306;
     
     // Criar conexão
     $conexao = mysqli_connect($servername, $username, $password, $dbname, $port);
