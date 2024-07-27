@@ -1,6 +1,4 @@
 <?php
 
-    $meses = Array("Jan", "Fev", "Mar");
-    $dias = Array("Seg", "Ter", "Qua");
-
-?>
+$meses = array("Jan", "Fev", "Mar");
+$dias = array("Seg", "Ter", "Qua");

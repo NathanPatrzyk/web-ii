@@ -1,0 +1,3 @@
+Codigo = 100
+Valor = 2500
+Tipo = 10

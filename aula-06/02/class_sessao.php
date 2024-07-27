@@ -118,7 +118,7 @@ class sessao {
 
     public function printAll() {
         foreach ($_SESSION as $k => $v) {
-            printf("%s = %s<br/>", $k, $v);
+            printf("%s = %s \n", $k, $v);
         }
     }
 
