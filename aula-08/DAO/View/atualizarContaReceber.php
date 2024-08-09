@@ -1,4 +1,5 @@
 <?php
+
 include "../Conexao.php";
 include "../Classes/ContasReceber.php";
 include "../DAO/ContasReceberDAO.php";
@@ -23,6 +24,7 @@ if (isset($_GET['atualizar'])) {
 }
 
 $CRDAO->ShowContasReceber($CR);
+
 ?>
 
 <head>
@@ -82,7 +84,7 @@ $CRDAO->ShowContasReceber($CR);
             </table>
 
             <input
-                class="bg-lime-500 hover:bg-lime-600 transition-all ease-in-out duration-500 text-slate-950 font-bold w-full rounded-md px-4 py-2 mt-4"
+                class="bg-lime-500 hover:bg-lime-600 transition-all ease-in-out duration-500 text-slate-950 font-bold w-full rounded-full px-4 py-2 mt-4"
                 name="btAtualizar" type="submit" value="Atualizar" />
         </form>
     </div>

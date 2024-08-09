@@ -1,4 +1,5 @@
 <?php
+
 include "../Conexao.php";
 include "../Classes/ContasReceber.php";
 include "../DAO/ContasReceberDAO.php";
@@ -13,4 +14,3 @@ if (isset($_GET['ID'])) {
         echo "<script>window.location = 'listar.php';</script>";
     }
 }
-?>

@@ -1,4 +1,5 @@
 <?php
+
 include "../Conexao.php";
 
 include "../Classes/ContasPagar.php";
@@ -6,10 +7,11 @@ include "../DAO/ContasPagarDAO.php";
 
 include "../Classes/ContasReceber.php";
 include "../DAO/ContasReceberDAO.php";
+
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -18,19 +20,23 @@ include "../DAO/ContasReceberDAO.php";
     <title>LISTAR</title>
 </head>
 
-<body class="text-slate-200 bg-slate-950 flex flex-col items-center justify-center gap-8 py-8 min-h-screen">
-    <a href="./cadastrar.php"><button
-            class="flex items-center justify-center gap-2 bg-lime-500 rounded-full text-slate-900 font-semibold border-none cursor-pointer transition-all duration-500 hover:bg-lime-600 px-4 py-2"><svg
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+<body class="bg-slate-950 text-slate-200 flex flex-col items-center justify-center gap-8 py-8">
+    <a href="./cadastrar.php">
+        <button
+            class="bg-lime-500 hover:bg-lime-600 rounded-full text-slate-900 font-semibold flex items-center justify-center gap-1 px-4 py-2 cursor-pointer transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-plus">
                 <path d="M5 12h14" />
                 <path d="M12 5v14" />
-            </svg>Cadastrar
-            Nova Conta</button></a>
+            </svg>
+            Cadastrar Nova Conta
+        </button>
+    </a>
 
-    <div class="bg-slate-900 w-[80%] p-8 rounded-md">
+    <div class="bg-slate-900 rounded-md p-8 w-[80%]">
         <h2 class="text-lime-500 text-3xl border-b-2 border-slate-950 pb-4">Lista de Contas a Pagar</h2>
+
         <div class="text-slate-400 grid place-items-start grid-cols-4 pt-4">
             <div>Documento</div>
             <div>Valor</div>
@@ -78,8 +84,9 @@ include "../DAO/ContasReceberDAO.php";
         <?php } ?>
     </div>
 
-    <div class="bg-slate-900 w-[80%] p-8 rounded-md">
-        <h2 class="text-lime-500 text-3xl border-b-2 border-slate-950 pb-4">Lista de Contas a Receber</h2>
+    <div class="bg-slate-900 rounded-md p-8 w-[80%]">
+        <h2 class="border-b-2 border-slate-950 text-lime-500 text-3xl pb-4">Lista de Contas a Receber</h2>
+
         <div class="text-slate-400 grid place-items-start grid-cols-4 pt-4">
             <div>Documento</div>
             <div>Valor</div>
@@ -126,4 +133,5 @@ include "../DAO/ContasReceberDAO.php";
             </div>
         <?php } ?>
     </div>
+    
 </body>
